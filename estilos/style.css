@@ -8,7 +8,7 @@
     --body-color: #FBF9F3;
     --section-color: #EFEAE2;
     --paragrafo: #9C9891;
-    --font1: "Cormorant Garamond", serif;
+    --font1: "Noto Sans Georgian", ;
     --font2: "Manrope", sans-serif;
 }
 
@@ -117,7 +117,7 @@ main > .hero{
 }
 
 main > .hero > .hero-conteudo{
-    width: 40%;
+    width: 50%;
     margin-left: 5%;
     background-color: transparent;
     height: 80%;
@@ -761,3 +761,159 @@ main > .propina > .tabela > .para{
     color: var(--paragrafo);
     padding: 10px;
 }
+
+/* Section vida escolar */
+
+main > .escolar{
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+main > .escolar > .texto{
+    width: 35%;
+    height: 45vh;
+}
+
+main > .escolar > .texto > h1{
+    margin: 20px 0 0 70px;
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--cor1);
+}
+
+main > .escolar > .texto > h2{
+    font-size: 60px;
+    font-family: var(--font1);
+    font-weight: 600;
+    color: black;
+    margin: 0 0 0 70px;
+}
+
+main > .escolar > .item{
+    width: 30%;
+    background-color: transparent;
+    margin-top: 20px;
+    border-top: 2px solid var(--cor2);
+}
+
+main > .escolar > .item > svg{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    color: var(--cor1);
+}
+
+main > .escolar > .item > h1{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 35px;
+}
+
+main > .escolar > .item > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--paragrafo);
+}
+
+/* A parte do rodape */
+
+footer{
+    background-color: red;
+    border-top: 1px solid var(--paragrafo);
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+}
+
+footer > .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: transparent;
+    margin: auto;
+    border-bottom: 1px solid var(--paragrafo);
+}
+
+/* A parte que tem o logotipo la no footer */
+
+footer > .container > .logo{
+    background-color: transparent;
+    width: 40%;
+    height: auto;
+}
+
+footer > .container > .logo > img{
+    width: 350px;
+    height: 110px;
+    display: inline;
+}
+
+footer > .container > .logo > h1{
+    margin-top: 10px;
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--paragrafo);
+}
+
+/* O flebox do footer */
+
+footer > .container > .flexbox{
+    width: 30%;
+    height: auto;
+    background-color: transparent;
+}
+
+footer > .container > .flexbox >h1{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--cor1);
+    margin-left: 10px;
+}
+
+footer > .container > .flexbox > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--paragrafo);
+    margin: 10px 0 10px 10px;
+}
+
+/* A ultima parte do footer */
+
+footer > .fim{
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+    margin: auto;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+footer > .fim > div{
+    width: auto;
+    background-color: yellow;
+}
+
+footer > .fim > div > p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--paragrafo);
+    font-weight: 600;
+    font-size: 14px;
+}
+
