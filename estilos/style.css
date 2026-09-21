@@ -1,0 +1,763 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #601F1B;
+    --cor2: #D5B365;
+    --amarelo: #cf9f62;
+    --bt-hover: #78423B;
+    --body-color: #FBF9F3;
+    --section-color: #EFEAE2;
+    --paragrafo: #9C9891;
+    --font1: "Cormorant Garamond", serif;
+    --font2: "Manrope", sans-serif;
+}
+
+html, body{
+    margin: 0;
+    background-color: var(--body-color);
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Header*/
+
+header{
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    margin-top: -15px;
+    padding-bottom: 10px;
+}
+
+header >p{
+    width: 100%;
+    background-color: var(--cor1);
+    padding: 8px 0 8px 0;
+    font-size: 600;
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 12.5px;
+    color: var(--body-color);
+}
+
+/* Logo */
+
+header > .logo{
+    width: 30%;
+    height: 60%;
+    float: left;
+    background-color: transparent;
+    margin-top: -10px;
+}
+
+header > .logo > img{
+    width: 200px;
+    height: 65px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+/* Navbar */
+
+header > .nav{
+    width: 65%;
+    height: 70%;
+    background-color: transparent;
+    margin-top: -10px;
+    display: flex;
+    justify-content: right;
+}
+
+header > .nav > ul{
+    display: flex;
+    list-style-type: none;
+    font-family: var(--font2);
+    color: var(--cor1);
+}
+
+header > .nav > ul > li{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+header > .nav > ul > li > a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: 600;
+    font-size: 13px;
+    text-shadow:  .5px .5px black;
+}
+
+header > .nav > a{
+    color: white;
+    padding: 12px 15px 15px 15px;
+    margin: 23px 0px 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--font2);
+    text-align: right;
+    background-color: var(--cor1);
+    height: 13px;
+    font-size: 13px;
+}
+
+header > .nav > a:hover{
+    background-color: var(--bt-hover);
+}
+
+/* Imagem do fundo */
+
+main > .hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+    to right, #601F1B 0%, #641414cc 40%, #64141433 70%, #64141400 80%), url('../imagens/bg.jpg');
+    background-size: cover;
+     background-position: center;
+}
+
+main > .hero > .hero-conteudo{
+    width: 40%;
+    margin-left: 5%;
+    background-color: transparent;
+    height: 80%;
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 100px 0px 0 0 ;
+    max-width: 600px;
+}
+
+
+main > .hero > .hero-conteudo > span{
+    color: var(--cor2);
+}
+
+main > .hero > .hero-conteudo > span{
+    font-family: var(--font2);
+    margin: 0 0 0 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+main > .hero > .hero-conteudo > h1{
+    font-family: var(--font1);
+    font-size: 94px;
+    color: white;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+    
+}
+
+main > .hero > .hero-conteudo > h1 > em{
+    margin-top: -5px;
+    color: var(--cor2);
+    margin-left: 5px;
+}
+
+main > .hero > .hero-conteudo > p{
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--paragrafo);
+    width: 95%;
+    margin: 10px 0 40px 0 ;
+}
+
+main > .hero > .hero-conteudo > .botoes{
+    width: 100%;
+    height: 60px;
+}
+
+main > .hero > .hero-conteudo > .botoes > a{
+    padding: 15px;
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 16px;
+    width: 350px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+
+}
+
+main > .hero > .hero-conteudo > .botoes > .amarelo{
+    background-color: var(--cor2);
+    color: var(--cor1);
+    margin-right: 20px;
+}
+
+main > .hero > .hero-conteudo > .botoes > .amarelo > svg{
+    margin-bottom: -8px;
+    width: 20px;
+}
+
+main > .hero > .hero-conteudo > .botoes > .castanho{
+    background-color: transparent;
+    border: 1px solid  white;
+}
+
+main > .hero > .hero-conteudo > .botoes > .castanho:hover{
+    background-color: var(--bt-hover);
+}
+
+/* A parte da A nossa essência */
+
+main > .essencia{
+    background-color: var(--body-color);
+    height: 820px;
+    padding-bottom: 30px;
+}
+
+main > .essencia > .paragrafo{
+    background-color: transparent;
+    width: 90%;
+    height: 180px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+
+main > .essencia > .paragrafo > h1{
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor1);
+    margin-left: 10px;
+}
+
+main > .essencia > .paragrafo > p{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 60px;
+    text-indent: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color:  transparent;
+    width: 50%;
+}
+
+main > .essencia > .paragrafo > div > p{
+    float: right;
+    width: 47%;
+    background-color: transparent;
+    margin-top: -130px;
+    height: 50%;
+    color: #9C9891;
+    font-family: var(--font2);
+    font-size: 16px;
+}
+
+main > .essencia > .fe{
+    width: 90%;
+    background-color: transparent;
+    margin: auto;
+    padding-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    height: 61%;
+    border-top: 1px solid var(--section-color);
+}
+
+main > .essencia > .fe > .item{
+    width: 40%;
+    background-color: transparent;
+    margin: 20px;
+    border-bottom: 1px solid var(--section-color);
+    padding: 5px;
+}
+
+main > .essencia > .fe > .item > img{
+    width: 100%;
+    height: 50%;
+}
+
+main > .essencia > .fe > .item > svg{
+    color: var(--cor1);
+    margin: 10px 0 0 0px;
+    width: 35px;
+    height: 35px;
+}
+
+main > .essencia > .fe > .item > span{
+    font-family: var(--font1);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--cor2);
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    float: right;
+    margin-top: 10px;
+    display: inline;
+    text-align: center;
+}
+
+main > .essencia > .fe > .item > h1{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--cor1);
+    margin-bottom: 5px;
+}
+
+main > .essencia > .fe > .item > p{
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cor1);
+}
+
+/* Section das ofertas */
+
+main > .oferta{
+    background-color: var(--section-color);
+    height: 750px;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+main > .oferta > .texto{
+    width: 90%;
+    height: 23%;
+    background-color: transparent;
+    margin-left: 50px;
+}
+
+main > .oferta > .texto > h1{
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--cor1);
+}
+
+main > .oferta > .texto > h2{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 10px;
+    width: 50%;
+    background-color: transparent;
+    display: inline-block;
+}
+
+main > .oferta > .texto > div{
+    width: 45%;
+    float: right;
+}
+
+main > .oferta > .texto > div > p{
+    font-family: var(--font2);
+    color: var(--paragrafo);
+    font-size: 16px;
+}
+
+/* Flexbox da section oferta */
+
+main > .oferta > .caixa{
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    height: 72%;
+}
+
+main > .oferta > .caixa > .item{
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    border: 1px solid var(--paragrafo);
+}
+
+main > .oferta > .caixa > .item > img{
+    width: 100%;
+    height: 50%;
+}
+
+main > .oferta > .caixa > .item > h1{
+    margin: 20px 0 0 20px;
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor1);
+}
+
+main > .oferta > .caixa > .item > h2{
+    margin: 10px 0 0 20px;
+    font-family: var(--font1);
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+}
+
+main > .oferta > .caixa > .item > h3{
+    margin: 10px 10px 20px 20px;
+    font-family: var(--font2);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--paragrafo);
+}
+
+main > .oferta > .caixa > .item > a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 0 20px;
+}
+
+main > .oferta > .caixa > .item > a:hover{
+    text-decoration: underline;
+}
+
+main > .oferta > .caixa > .item > a > svg{
+    width: 25px;
+    margin-bottom: -8px;
+}
+
+/* A section futuro */
+
+main > .futuro{
+    width: 100%;
+    height: 70vh;
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+main > .futuro > .texto{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+}
+
+main > .futuro > .texto > h1{
+    color: var(--cor2);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--font2);
+    margin: 100px 0 15px 60px;
+}
+
+main > .futuro > .texto > h2{
+    font-family: var(--font1);
+    font-weight: bolder;
+    font-size: 60px;
+    color: white;
+    margin: 0px 0 0px 60px;
+}
+
+main > .futuro > .texto > p{
+    margin: 20px 0 0px 60px;
+    font-family: var(--font2);
+    color: var(--paragrafo);
+    font-weight: 600;
+}
+
+/* A div btn da section futuro */
+
+main > .futuro > .btn{
+    width: 45%;
+    height: 40%;
+    background-color: transparent;
+    margin-top: 10%;
+    border-left: 1px solid var(--cor2);
+}
+
+main > .futuro > .btn > h1{
+    color: white;
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px 0 20px 30px;
+}
+
+main > .futuro > .btn > h2{
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--paragrafo);
+    margin: 0 0 40px 30px;
+}
+
+main > .futuro > .btn > a{
+    width: 160px;
+    padding: 15px;
+    background-color: var(--cor2);
+    margin: 0 0 20px 30px;
+    text-decoration: none;
+    color: var(--cor1);
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+main > .futuro > .btn > a:hover{
+    background-color: var(--amarelo);
+}
+
+main > .futuro > .btn > a > svg{
+    margin: 0 0 -8px 5px;
+}
+
+/* Section da tabela de precos */
+
+main > .propina{
+    background-color: transparent;
+    height: auto;
+    width: 90%;
+    padding-top: 100px;
+    margin: auto;
+}
+
+main > .propina  > h1{
+    font-size: 14px;
+    color: var(--cor2);
+    display: block;
+    margin: 0 0 20px 0px;
+    font-weight: 600;
+    font-family: var(--font2);
+}
+
+main > .propina  > h2{
+    font-size: 60px;
+    color: black;
+    display: block;
+    margin: 0 0 40px 0px;
+    font-weight: 600;
+    font-family: var(--font1);
+    width: 50%;
+    background-color: transparent;
+    float: left;
+
+}
+
+main > .propina > div{
+    width: 50%;
+    height: 70px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    float: right;
+    background-color: transparent;
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    color: var(--paragrafo);
+    text-align: left;
+}
+
+/* A parte da incricao e reconfirmacao */
+
+main > .propina > .inscricao{
+    width: 475px;
+    height: 85vh;
+    margin-top: 140px;
+    background-color: var(--cor1);
+}
+
+/* A parte doo head do div inscricao*/
+
+main > .propina > .inscricao > .head{
+    width: 85%;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 10px;
+    padding: 30px 0 10px 0 ;
+    border-bottom: 1px solid var(--paragrafo);
+    font-family: var(--font2);
+    color: var(--cor2);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* A parte doo novo do div inscricao*/
+
+main > .propina > .inscricao > .novo{
+    padding: 5px 0 15px 0;
+    width: 85%;
+    background-color: transparent;
+    margin: auto;
+    border-bottom: 1px solid var(--paragrafo);
+}
+
+main > .propina > .inscricao > .novo > p {
+    font-family: var(--font2);
+    color: var(--body-color);
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+main > .propina > .inscricao > .novo > h1{
+    color: white;
+    font-family: var(--font1);
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/*  A parte doo instituto do div inscricao*/
+
+main > .propina > .inscricao > .instituto{
+    width: 85%;
+    margin: auto;
+    padding: 15px 0 15px 0;
+    background-color: transparent;
+    border-bottom: 1px solid var(--paragrafo);
+}
+
+main > .propina > .inscricao > .instituto > p{
+    margin-top: 5px;
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--body-color);
+}
+
+main > .propina > .inscricao > .instituto > h1{
+    color: white;
+    font-family: var(--font1);
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/*  A parte do botao do div inscricao*/
+
+main > .propina > .inscricao > .botao{
+    width: 85%;
+    width: 85%;
+    margin: auto;
+    padding: 15px 0 15px 0;
+    background-color: transparent;
+}
+
+main > .propina > .inscricao > .botao > p{
+    margin: 0px 0 0 10px;
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--body-color);
+}
+
+main > .propina > .inscricao > .botao > button{
+    background-color: var(--cor2);
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    height: 50px;
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main > .propina > .inscricao > .botao > button:hover{
+    background-color: var(--amarelo
+    );
+}
+
+main > .propina > .inscricao > .botao > button > svg{
+    margin: 0 0 -8px 5px;
+}
+
+
+/* A parte da tabela de precos */
+
+main > .propina > .tabela{
+    width: 60%;
+    height: 85vh;
+    margin-top: 140px;
+    background-color: transparent;
+    float: right;
+    margin-top: -42.7%;
+    border: 1px solid var(--paragrafo);
+}
+
+main > .propina > .tabela > .head{
+    background-color: var(--section-color);
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--paragrafo);
+}
+
+main > .propina > .tabela > .head > .item{
+    background-color: transparent;
+    width: 32%;
+    height: 35px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--paragrafo);
+}
+
+/* A parte do body da tabela */
+
+main > .propina > .tabela > .caloiro{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    border-bottom: 1px solid var(--paragrafo);
+}
+
+/* A parte do body da tabela na parte das classes */
+
+main > .propina > .tabela  > .caloiro > .classe{
+    font-family: var(--font1);
+    color: var(--cor1);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 30px 0 0 20px;
+}
+
+main > .propina > .tabela  > .caloiro > div > h1{
+    font-family: var(--font2);
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+main > .propina > .tabela  > .caloiro > div > p{
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    margin-top: 5px;
+    text-align: center;
+}
+
+main > .propina > .tabela  > .caloiro > .descontos > h1{
+    text-align: right;
+    margin-right: 15px;
+}
+
+main > .propina > .tabela  > .caloiro > .descontos > p{
+    margin-right: 15px;
+    text-align: left;
+}
+
+/* O paragrafo do fim da tabela */
+
+main > .propina > .tabela > .para{
+    background-color: var(--section-color);
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--paragrafo);
+    padding: 10px;
+}
